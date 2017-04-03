@@ -1,0 +1,29 @@
+{
+  "name": "angular-js-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "libs": "npm run angular && npm run bootstrap-css && npm run bootstrap-js && npm run angular-route && npm run angular-mocks",
+    "angular": "cp -R ./node_modules/angular/*.js ./src/lib",
+    "angular-route": "cp -R ./node_modules/angular-route/*.js ./src/lib",
+    "angular-mocks": "cp -R ./node_modules/angular-mocks/*.js ./src/lib",
+    "bootstrap-css": "cp -R ./node_modules/bootstrap/dist/css/*.css ./src/lib",
+    "bootstrap-js": "cp -R ./node_modules/bootstrap/dist/js/*.js ./src/lib"
+  },
+  "author": "Porfirio Chávez <elporfirio@gmail.com> (https://elporfirio.com)",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.4",
+    "angular-mocks": "^1.6.4",
+    "angular-route": "^1.6.4",
+    "bootstrap": "^3.3.7"
+  },
+  "devDependencies": {
+    "jasmine": "^2.5.3",
+    "karma": "^1.5.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.1.0"
+  }
+}
